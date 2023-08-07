@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("How many wheels does your vehicle have that you would like to build?");
-            var userInput = int.TryParse(Console.ReadLine(), out int numOfWheels);
-            var vehicle = VehicleFactory.GetVehicle(numOfWheels);
+            Console.WriteLine("How many tires does your vehicle have that you would like to build?");
+            var userInput = int.TryParse(Console.ReadLine(), out int numOfTires);
+            var vehicle = VehicleFactory.GetVehicle(numOfTires);
             vehicle.Drive();
         }
     }
